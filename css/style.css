@@ -62,10 +62,6 @@ td {
   background-color: #ffa500;
 }
 
-.sub-grid.building:hover {
-  background-color: #0000ff;
-}
-
 .spacer {
   width: 0.001px;
   border: none;
