@@ -48,10 +48,12 @@ td {
   width:20px;
 }
 
-
 .sub-grid.building {
   height:30px;
   width:50px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
 }
 
 .sub-grid.friendly:hover {
@@ -67,10 +69,25 @@ td {
   border: none;
 }
 
-.sub-grid:hover {
-  background-color: green;
-}
-
 .bottom-Lane {
   border-top: 5px solid #000000;
+}
+
+.buildingimg {
+  height: 40px;
+  width: 40px;
+}
+
+.base {
+  width:50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.base.friendly:hover{
+  background-color: #0000ff;
+}
+
+.base.enemy:hover {
+  background-color: #ffa500;
 }
