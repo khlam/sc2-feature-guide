@@ -84,10 +84,23 @@ td {
   vertical-align: middle;
 }
 
-.base.friendly:hover{
+.base.friendly:hover {
   background-color: #0000ff;
 }
 
 .base.enemy:hover {
+  background-color: #ffa500;
+}
+
+.action-grid {
+  height: 40px;
+  width: 40px;
+}
+
+.action-grid.friendly:hover {
+  background-color: #0000ff;
+}
+
+.action-grid.enemy:hover {
   background-color: #ffa500;
 }

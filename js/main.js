@@ -1,6 +1,7 @@
 
-function showText(value) {
+function showText(value, detail='') {
     document.getElementById("featureName").innerText = value
+    document.getElementById("featureDetail").innerText = detail
 }
 
 function main() {

@@ -15,22 +15,22 @@
 
         <div class="row">
             <div class="col-4"></div>
-            <div class="col-8"><h3 id="featureName">feature.name.here</h3></div>
+            <div class="col-8"><h3 id="featureName">feature.name.here</h3> <p id="featureDetail">feature.name.here</p></div>
         </div>
 
         <div class="row">
             <div class="col-1"></div>
             <div class="col-4">
-                <div class="state">
+                <div class="state" id="s1">
                     <table class="top-Lane">
                         <tr>       
                             <td class="sub-grid building friendly" onmouseover="showText('s1.f_marine_top_buildings')"><img class="buildingimg" src="img/buildings/f_marine_building.png"></td>
-                            <td class="base friendly" rowspan="3" onmouseover="showText('s1.f_nexus_HP_top')"><img class="buildingimg" src="img/buildings/nexus_blue.png"></td>
+                            <td class="base friendly" rowspan="3" onmouseover="showText('s1.f_nexus_HP_top', 'range: 0 to 2000')"><img class="buildingimg" src="img/buildings/nexus_blue.png"></td>
                                 <td class="sub-grid friendly" onmouseover="showText('s1.f_marine_top_grid_1')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_marine_top_grid_1')"></td> <td class="spacer"></td>
                                 <td class="sub-grid friendly" onmouseover="showText('s1.f_marine_top_grid_2')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_marine_top_grid_2')"></td> <td class="spacer"></td>
                                 <td class="sub-grid friendly" onmouseover="showText('s1.f_marine_top_grid_3')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_marine_top_grid_3')"></td> <td class="spacer"></td>
                                 <td class="sub-grid friendly" onmouseover="showText('s1.f_marine_top_grid_4')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_marine_top_grid_4')">
-                            <td class="base enemy" rowspan="3" onmouseover="showText('s1.e_nexus_HP_top')"><img class="buildingimg" src="img/buildings/nexus_orange.png"></td>
+                            <td class="base enemy" rowspan="3" onmouseover="showText('s1.e_nexus_HP_top', 'range: 0 to 2000')"><img class="buildingimg" src="img/buildings/nexus_orange.png"></td>
                             <td class="sub-grid building enemy" onmouseover="showText('s1.e_marine_top_buildings')"><img class="buildingimg" src="img/buildings/e_marine_building.png"></td>
                         </tr>
 
@@ -54,20 +54,121 @@
                     </table>
 
                     <table class="bottom-Lane">
-                        
-                    </table>
+                        <tr>       
+                            <td class="sub-grid building friendly" onmouseover="showText('s1.f_marine_bot_buildings')"><img class="buildingimg" src="img/buildings/f_marine_building.png"></td>
+                            <td class="base friendly" rowspan="3" onmouseover="showText('s1.f_nexus_HP_bot', 'range: 0 to 2000')"><img class="buildingimg" src="img/buildings/nexus_blue.png"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s1.f_marine_bot_grid_1')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_marine_bot_grid_1')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s1.f_marine_bot_grid_2')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_marine_bot_grid_2')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s1.f_marine_bot_grid_3')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_marine_bot_grid_3')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s1.f_marine_bot_grid_4')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_marine_bot_grid_4')">
+                            <td class="base enemy" rowspan="3" onmouseover="showText('s1.e_nexus_HP_bot', 'range: 0 to 2000')"><img class="buildingimg" src="img/buildings/nexus_orange.png"></td>
+                            <td class="sub-grid building enemy" onmouseover="showText('s1.e_marine_bot_buildings')"><img class="buildingimg" src="img/buildings/e_marine_building.png"></td>
+                        </tr>
 
+                        <tr>
+                            <td class="sub-grid building friendly" onmouseover="showText('s1.f_baneling_bot_buildings')"><img class="buildingimg" src="img/buildings/f_baneling_building.png"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s1.f_baneling_bot_grid_1')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_baneling_bot_grid_1')"></td><td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s1.f_baneling_bot_grid_2')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_baneling_bot_grid_2')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s1.f_baneling_bot_grid_3')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_baneling_bot_grid_3')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s1.f_baneling_bot_grid_4')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_baneling_bot_grid_4')">
+                            <td class="sub-grid building enemy" onmouseover="showText('s1.e_baneling_bot_buildings')"><img class="buildingimg" src="img/buildings/e_baneling_building.png"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="sub-grid building friendly" onmouseover="showText('s1.f_immortal_bot_buildings')"><img class="buildingimg" src="img/buildings/f_immortal_building.png"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s1.f_immortal_bot_grid_1')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_immortal_bot_grid_1')"></td><td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s1.f_immortal_bot_grid_2')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_immortal_bot_grid_2')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s1.f_immortal_bot_grid_3')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_immortal_bot_grid_3')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s1.f_immortal_bot_grid_4')"></td> <td class="sub-grid enemy" onmouseover="showText('s1.e_immortal_bot_grid_4')"></td>
+                            <td class="sub-grid building enemy" onmouseover="showText('s1.e_immortal_bot_buildings')"><img class="buildingimg" src="img/buildings/e_immortal_building.png"></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
             <div class="col-2">
                 <div class="action">
-                    action
+                    <table class="action">
+                        <tr>
+                            <td class="action-grid friendly" onmouseover="showText('a.f_lane', 'values: top or bottom')"></td> <td class="action-grid enemy" onmouseover="showText('a.e_lane', 'values: top or bottom')"></td>
+                        </tr>
+                        <tr>
+                            <td class="action-grid friendly" onmouseover="showText('a.f_marine')"><img class="buildingimg" src="img/buildings/f_marine_building.png"></td> <td class="action-grid enemy" onmouseover="showText('a.e_marine')"><img class="buildingimg" src="img/buildings/e_marine_building.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="action-grid friendly" onmouseover="showText('a.f_baneling')"><img class="buildingimg" src="img/buildings/f_baneling_building.png"></td> <td class="action-grid enemy" onmouseover="showText('a.e_baneling')"><img class="buildingimg" src="img/buildings/e_baneling_building.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="action-grid friendly" onmouseover="showText('a.f_immortal')"><img class="buildingimg" src="img/buildings/f_immortal_building.png"></td> <td class="action-grid enemy" onmouseover="showText('a.e_immortal')"><img class="buildingimg" src="img/buildings/e_immortal_building.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="action-grid friendly" onmouseover="showText('a.f_pylon')"></td> <td class="action-grid enemy" onmouseover="showText('a.e_pylon')"></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
             <div class="col-4">
-                <div class="state">
-                    state
-                </div>
+                <div class="state" id="s1">
+                    <table class="top-Lane">
+                        <tr>       
+                            <td class="sub-grid building friendly" onmouseover="showText('s2.f_marine_top_buildings')"><img class="buildingimg" src="img/buildings/f_marine_building.png"></td>
+                            <td class="base friendly" rowspan="3" onmouseover="showText('s2.f_nexus_HP_top', 'range: 0 to 2000')"><img class="buildingimg" src="img/buildings/nexus_blue.png"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_marine_top_grid_1')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_marine_top_grid_1')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_marine_top_grid_2')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_marine_top_grid_2')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_marine_top_grid_3')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_marine_top_grid_3')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_marine_top_grid_4')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_marine_top_grid_4')">
+                            <td class="base enemy" rowspan="3" onmouseover="showText('s2.e_nexus_HP_top', 'range: 0 to 2000')"><img class="buildingimg" src="img/buildings/nexus_orange.png"></td>
+                            <td class="sub-grid building enemy" onmouseover="showText('s2.e_marine_top_buildings')"><img class="buildingimg" src="img/buildings/e_marine_building.png"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="sub-grid building friendly" onmouseover="showText('s2.f_baneling_top_buildings')"><img class="buildingimg" src="img/buildings/f_baneling_building.png"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_baneling_top_grid_1')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_baneling_top_grid_1')"></td><td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_baneling_top_grid_2')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_baneling_top_grid_2')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_baneling_top_grid_3')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_baneling_top_grid_3')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_baneling_top_grid_4')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_baneling_top_grid_4')">
+                            <td class="sub-grid building enemy" onmouseover="showText('s2.e_baneling_top_buildings')"><img class="buildingimg" src="img/buildings/e_baneling_building.png"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="sub-grid building friendly" onmouseover="showText('s2.f_immortal_top_buildings')"><img class="buildingimg" src="img/buildings/f_immortal_building.png"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_immortal_top_grid_1')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_immortal_top_grid_1')"></td><td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_immortal_top_grid_2')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_immortal_top_grid_2')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_immortal_top_grid_3')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_immortal_top_grid_3')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_immortal_top_grid_4')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_immortal_top_grid_4')"></td>
+                            <td class="sub-grid building enemy" onmouseover="showText('s2.e_immortal_top_buildings')"><img class="buildingimg" src="img/buildings/e_immortal_building.png"></td>
+                        </tr>
+                    </table>
+
+                    <table class="bottom-Lane">
+                        <tr>       
+                            <td class="sub-grid building friendly" onmouseover="showText('s2.f_marine_bot_buildings')"><img class="buildingimg" src="img/buildings/f_marine_building.png"></td>
+                            <td class="base friendly" rowspan="3" onmouseover="showText('s2.f_nexus_HP_bot', 'range: 0 to 2000')"><img class="buildingimg" src="img/buildings/nexus_blue.png"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_marine_bot_grid_1')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_marine_bot_grid_1')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_marine_bot_grid_2')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_marine_bot_grid_2')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_marine_bot_grid_3')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_marine_bot_grid_3')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_marine_bot_grid_4')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_marine_bot_grid_4')">
+                            <td class="base enemy" rowspan="3" onmouseover="showText('s2.e_nexus_HP_bot', 'range: 0 to 2000')"><img class="buildingimg" src="img/buildings/nexus_orange.png"></td>
+                            <td class="sub-grid building enemy" onmouseover="showText('s2.e_marine_bot_buildings')"><img class="buildingimg" src="img/buildings/e_marine_building.png"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="sub-grid building friendly" onmouseover="showText('s2.f_baneling_bot_buildings')"><img class="buildingimg" src="img/buildings/f_baneling_building.png"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_baneling_bot_grid_1')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_baneling_bot_grid_1')"></td><td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_baneling_bot_grid_2')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_baneling_bot_grid_2')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_baneling_bot_grid_3')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_baneling_bot_grid_3')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_baneling_bot_grid_4')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_baneling_bot_grid_4')">
+                            <td class="sub-grid building enemy" onmouseover="showText('s2.e_baneling_bot_buildings')"><img class="buildingimg" src="img/buildings/e_baneling_building.png"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="sub-grid building friendly" onmouseover="showText('s2.f_immortal_bot_buildings')"><img class="buildingimg" src="img/buildings/f_immortal_building.png"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_immortal_bot_grid_1')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_immortal_bot_grid_1')"></td><td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_immortal_bot_grid_2')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_immortal_bot_grid_2')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_immortal_bot_grid_3')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_immortal_bot_grid_3')"></td> <td class="spacer"></td>
+                                <td class="sub-grid friendly" onmouseover="showText('s2.f_immortal_bot_grid_4')"></td> <td class="sub-grid enemy" onmouseover="showText('s2.e_immortal_bot_grid_4')"></td>
+                            <td class="sub-grid building enemy" onmouseover="showText('s2.e_immortal_bot_buildings')"><img class="buildingimg" src="img/buildings/e_immortal_building.png"></td>
+                        </tr>
+                    </table>
             </div>
         </div>
     </body>
